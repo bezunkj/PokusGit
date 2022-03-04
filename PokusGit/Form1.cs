@@ -44,5 +44,10 @@ namespace PokusGit
             int b = Convert.ToInt32(textBox2.Text);
             MessageBox.Show(a * b + "");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("ITA2");
+        }
     }
 }
