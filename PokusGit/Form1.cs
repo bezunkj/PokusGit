@@ -27,5 +27,16 @@ namespace PokusGit
         {
             MessageBox.Show("ITA2");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int x = Convert.ToInt32( textBox3.Text );
+            int f = 1;
+            for(int i = x; i > 0; i--)
+            {
+                f *= i;
+            }
+            MessageBox.Show("Faktorial: " + f);
+        }
     }
 }
