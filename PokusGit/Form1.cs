@@ -21,30 +21,8 @@ namespace PokusGit
         {
             int a = Convert.ToInt32(textBox1.Text);
             int b = Convert.ToInt32(textBox2.Text);
-            MessageBox.Show(a + b + "");
+            MessageBox.Show("Soucet: " + a + b + "\nRozdil: " + (a - b) + "\nPodil: " + ((double)a / b) + "\nSoucin: " + a * b);
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            MessageBox.Show(a - b + "");
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            MessageBox.Show((double)a / b + "");
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            MessageBox.Show(a * b + "");
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("ITA2");
