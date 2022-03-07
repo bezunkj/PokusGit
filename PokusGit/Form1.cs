@@ -38,5 +38,24 @@ namespace PokusGit
             }
             MessageBox.Show("Faktorial: " + f);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // z textbox4 spocitej, kolik slov obsahuje retezec obsazen v textbox 5 a vypis v MessageBox
+
+            string s = textBox4.Text;
+            string s2 = textBox5.Text;
+            string[] separator = { " " };
+            string[] words = s.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+            int count = 0;
+            foreach(string word in words)
+            {
+                if (word.Contains(s2))
+                {
+                    count++;
+                }
+            }
+            MessageBox.Show("Text z textBox4 obsahuje " + count + " krát řetězec z textBox5 (" + s2 + ")");
+        }
     }
 }
